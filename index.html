@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/ead48c60b9.js" crossorigin="anonymous"></script>
+  <title>Bootstrap</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="nav-left">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram logo"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active titulo" aria-current="page" href="#"> <b>Instagram</b> </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button type="button" class="btn btn-success boton-v" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          data-bs-whatever="@mdo">Create a new post</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                  </div>
+                  <div class="mb-3 cap">
+                    <label for="message-text" class="col-form-label"><b>Caption</b> :</label>
+                    <textarea class="form-control" id="message-text"
+                      placeholder="Add the caption of your post here"></textarea>
+                    <div class="iconos">
+                      <div class="icono i1"><i class="fa-solid fa-camera"></i></div>
+                      <div class="icono i2"><i class="fa-solid fa-location-dot"></i></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu list dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item rojo" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <ul class="nav nav-tabs cuadros" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+        aria-controls="home" aria-selected="true"> <i class="fa-solid fa-table-cells"></i> </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+        aria-controls="profile" aria-selected="false"> <i class="fa-solid fa-square"></i> </button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="https://www.thesprucepets.com/thmb/HAXua0m1oC4ahFBDLc8k0j9y0YQ=/3300x0/filters:no_upscale():strip_icc()/fluffiest-dogs-ever-4589343-hero-939e88f02bae4cfdb557bb7c15ee5384.jpg"
+              alt="imagen de un perro" class="imgs">
+          </div>
+          <div class="col-4">
+            <img src="https://dashboard.southtravels.com/app/public/uploads/DKxrpLJbXK4UDciP24Mswoh7gfezPIzCY86xu8Zx.jpeg"
+              alt="imagen de un grupo de personas" class="imgs">
+          </div>
+          <div class="col-4">
+            <img
+              src="https://cdnb.artstation.com/p/assets/covers/images/022/207/349/large/leandro-de-souza-psx-20191112-140606.jpg?1574520754"
+              alt="imagen de una playa" class="imgs">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="https://iasbh.tmgrup.com.tr/cbda37/1200/627/0/8/801/426?u=https://isbh.tmgrup.com.tr/sbh/2021/09/02/amerika-eyaletleri-listesi-amerika-eyaletleri-haritasi-e1-1630584114507.jpg"
+              alt="imagen de una persona" class="imgs">
+          </div>
+          <div class="col-4">
+            <img
+              src="https://imagenes.20minutos.es/files/image_654_369/files/fp/uploads/imagenes/2020/06/29/coronavirus-en-florida.r_d.466-557.jpeg"
+              alt="imagen de un perro" class="imgs">
+          </div>
+          <div class=" col-4">
+            <img
+              src="https://static01.nyt.com/images/2020/10/13/nyregion/00nyvirus-gyms/00nyvirus-gyms-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+              alt="imagen de cristiano ronaldo" class="imgs">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="https://www.houstononthecheap.com/wp-content/w3-webp/uploads/2019/07/planet-fitness-teen-summer-challenge.jpgw3.webp"
+              alt="imagen de una familia" class="imgs">
+          </div>
+          <div class="col-4">
+            <img
+              src="https://1.bp.blogspot.com/-fZ2NmTvI5w0/V0Hgu0Td6KI/AAAAAAABNJU/blXMqvB59Vg0EbyBNefsW5QSIfxXmMjtQCLcB/s1600/2015%2B06%2BNueva%2BYork%2B%2BTimes%2BSquare%2By%2Bcalles%2Bcerca%2B%2B00044.jpg"
+              alt="imagen de codigo" class="imgs">
+          </div>
+          <div class="col-4">
+            <img
+              src="https://previews.123rf.com/images/duha127/duha1271201/duha127120100118/12059684-nueva-york-03-de-julio-las-personas-que-cruzan-la-calle-en-la-s%C3%A9ptima-avenida-3-de-julio-de-2011.jpg"
+              alt="personas estudiando" class="imgs">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="container-fluid">
+        <div class="row col-a">
+          <div class="col-3"></div>
+          <div class="col-6 col-body">
+            <div class="cabecera-col">
+              <h2>My crazy dog Spark!</h2>
+              <span>08/26</span>
+            </div>
+            <img src="https://www.thesprucepets.com/thmb/HAXua0m1oC4ahFBDLc8k0j9y0YQ=/3300x0/filters:no_upscale():strip_icc()/fluffiest-dogs-ever-4589343-hero-939e88f02bae4cfdb557bb7c15ee5384.jpg" alt="imagen de un perro" class="imgs-a">
+            <p class="likes"> <b>204 Likes</b> </p>
+            <p class="text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row col-a">
+          <div class="col-3"></div>
+          <div class="col-6 col-body">
+            <div class="cabecera-col">
+              <h2>The greatness of Croatia</h2>
+              <span>04/09</span>
+            </div>
+            <img src="https://dashboard.southtravels.com/app/public/uploads/DKxrpLJbXK4UDciP24Mswoh7gfezPIzCY86xu8Zx.jpeg" alt="imagen de una playa" class="imgs-a">
+            <p class="likes"> <b>26985 Likes</b> </p>
+            <p class="text-u">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row col-a">
+          <div class="col-3"></div>
+          <div class="col-6 col-body">
+            <div class="cabecera-col">
+              <h2>Amazing GOOL by Cristiano!</h2>
+              <span>06/10</span>
+            </div>
+            <img src="https://cdnb.artstation.com/p/assets/covers/images/022/207/349/large/leandro-de-souza-psx-20191112-140606.jpg?1574520754" alt="imagen de cristiano ronaldo" class="imgs-a">
+            <p class="likes"> <b>1678 Likes</b> </p>
+            <p class="text-u">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
